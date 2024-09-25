@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Usługi oferowane przez ClickBoost">
+  <meta name="keywords" content="ClickBoost, usługi, Google Ads, tworzenie stron, marketing">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usługi - ClickBoost</title>
+  <!-- Czcionki Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Ikony Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- Plik CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Nawigacja -->
+  <nav>
+    <div class="logo"><i class="fas fa-bullseye"></i> ClickBoost</div>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    <ul>
+      <li><a href="index.html#why-us">Dlaczego my?</a></li>
+      <li><a href="zalety.html">Zalety</a></li>
+      <li><a href="opinie.html">Opinie</a></li>
+      <li><a href="uslugi.html">Usługi</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sekcja Usługi -->
+  <section id="services">
+    <div class="container">
+      <h2>Nasze Usługi</h2>
+      <p>W ClickBoost oferujemy kompleksowe rozwiązania marketingowe, które pomogą Twojej firmie osiągnąć sukces w internecie.</p>
+
+      <div class="services-list">
+        <div class="service">
+          <div class="service-icon"><i class="fas fa-search-dollar"></i></div>
+          <h3>Kampanie Google Ads</h3>
+          <p>Tworzymy i zarządzamy skutecznymi kampaniami reklamowymi w sieci wyszukiwania Google, zwiększając ruch na Twojej stronie i konwersje.</p>
+        </div>
+        <div class="service">
+          <div class="service-icon"><i class="fas fa-desktop"></i></div>
+          <h3>Tworzenie Stron WWW</h3>
+          <p>Projektujemy nowoczesne i responsywne strony internetowe, które przyciągają uwagę i zachęcają do działania.</p>
+        </div>
+        <div class="service">
+          <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Optymalizacja SEO</h3>
+          <p>Poprawiamy widoczność Twojej strony w wynikach organicznych, zwiększając jej pozycję w wyszukiwarkach.</p>
+        </div>
+        <div class="service">
+          <div class="service-icon"><i class="fas fa-envelope-open-text"></i></div>
+          <h3>Email Marketing</h3>
+          <p>Budujemy relacje z klientami poprzez skuteczne kampanie mailingowe, które zwiększają zaangażowanie i lojalność.</p>
+        </div>
+        <div class="service">
+          <div class="service-icon"><i class="fas fa-chart-pie"></i></div>
+          <h3>Analityka i Raportowanie</h3>
+          <p>Dostarczamy szczegółowe analizy i raporty, abyś mógł podejmować świadome decyzje biznesowe.</p>
+        </div>
+        <div class="service">
+          <div class="service-icon"><i class="fas fa-headset"></i></div>
+          <h3>Wsparcie i Doradztwo</h3>
+          <p>Nasz zespół ekspertów jest do Twojej dyspozycji, aby pomóc w każdej kwestii związanej z marketingiem online.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stopka -->
+  <footer>
+    <p>© 2023 ClickBoost. Wszystkie prawa zastrzeżone.</p>
+  </footer>
+
+  <!-- Skrypty -->
+  <!-- Skrypt nawigacji mobilnej -->
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
