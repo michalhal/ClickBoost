@@ -171,7 +171,7 @@
     const formData = new FormData(this);
 
     // Wyślij formularz za pomocą EmailJS
-    emailjs.sendForm('default_service', 'template_clickboost', this)
+    emailjs.sendForm('service_pgmail', 'template_clickboost', this)
       .then(function() {
         document.getElementById('status-message').innerHTML = 'Wiadomość została wysłana pomyślnie!';
         document.getElementById('contact-form').reset();
