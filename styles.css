@@ -10,7 +10,7 @@ body {
   font-family: 'Poppins', Arial, sans-serif;
   color: #fff;
   line-height: 1.6;
-  background: #1a1a2e;
+  background-color: #1a1a2e; /* Ciemnofioletowe tło */
 }
 
 /* Linki */
@@ -82,7 +82,7 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(26, 26, 46, 0.7);
+  background-color: rgba(26, 26, 46, 0.7); /* Ciemnofioletowy overlay */
 }
 
 .header-content {
@@ -164,7 +164,7 @@ section img {
 .benefit {
   flex: 1 1 30%;
   margin: 20px;
-  background: #16213e;
+  background: #16213e; /* Ciemniejszy fiolet */
   padding: 30px 20px;
   border-radius: 5px;
   transition: transform 0.3s, box-shadow 0.3s;
