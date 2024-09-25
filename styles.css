@@ -443,3 +443,94 @@ footer {
     margin-left: 20px;
   }
 }
+
+
+/* Dodatkowe style dla podstron */
+
+/* Lista usług i zalet */
+.services-list, .benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.services-list .service, .benefits-list .benefit {
+  flex: 1 1 calc(30% - 40px);
+  background: rgba(20, 241, 149, 0.1);
+  margin: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.services-list .service:hover, .benefits-list .benefit:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(20, 241, 149, 0.2);
+}
+
+.services-list .service-icon i, .benefits-list .benefit i {
+  font-size: 48px;
+  color: #14f195;
+  margin-bottom: 20px;
+}
+
+.services-list h3, .benefits-list h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.services-list p, .benefits-list p {
+  color: #cccccc;
+}
+
+/* Sekcja kontaktowa */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.contact-item {
+  flex: 1 1 calc(30% - 40px);
+  margin: 20px;
+  text-align: center;
+}
+
+.contact-item i {
+  font-size: 48px;
+  color: #14f195;
+  margin-bottom: 20px;
+}
+
+.contact-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-item p, .contact-item a {
+  color: #cccccc;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: #14f195;
+}
+
+/* Responsywność */
+@media (max-width: 1024px) {
+  .services-list .service, .benefits-list .benefit, .contact-info .contact-item {
+    flex: 1 1 calc(45% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-list .service, .benefits-list .benefit, .contact-info .contact-item {
+    flex: 1 1 100%;
+    margin: 20px 0;
+  }
+}
+
