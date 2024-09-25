@@ -153,12 +153,17 @@
 
   <!-- Skrypty -->
   <!-- EmailJS SDK -->
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- Inicjalizacja EmailJS -->
   <script type="text/javascript">
     (function(){
-      emailjs.init("-PN4q_crUU4bXYcj1"); // Zamień na swój User ID (klucz publiczny)
+      emailjs.init({
+        publicKey: '-PN4q_crUU4bXYcj1' // Zamień na swój Public Key
+      });
     })();
   </script>
+
   <!-- Skrypt obsługujący formularz -->
   <script type="text/javascript">
     document.getElementById('contact-form').addEventListener('submit', function(event) {
@@ -172,6 +177,7 @@
       });
     });
   </script>
+
   <!-- Skrypt nawigacji mobilnej -->
   <script>
     const menuToggle = document.querySelector('.menu-toggle');
