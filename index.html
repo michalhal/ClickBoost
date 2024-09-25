@@ -156,14 +156,14 @@
   <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
   <script type="text/javascript">
     (function(){
-      emailjs.init("TWÓJ_USER_ID"); // Zamień na swój User ID
+      emailjs.init("-PN4q_crUU4bXYcj1"); // Zamień na swój User ID (klucz publiczny)
     })();
   </script>
   <!-- Skrypt obsługujący formularz -->
   <script type="text/javascript">
     document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault();
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+      emailjs.sendForm('service_krq58cy', 'template_hgljnan', this)
       .then(function() {
         document.getElementById('status-message').innerHTML = 'Wiadomość została wysłana pomyślnie!';
         document.getElementById('contact-form').reset();
