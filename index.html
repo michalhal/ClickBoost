@@ -168,7 +168,7 @@
   <script type="text/javascript">
     document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault();
-      emailjs.sendForm('service_yr8v9d1', 'template_clickboost', this)
+      emailjs.sendForm('default_service', 'template_clickboost', this)
       .then(function() {
         document.getElementById('status-message').innerHTML = 'Wiadomość została wysłana pomyślnie!';
         document.getElementById('contact-form').reset();
