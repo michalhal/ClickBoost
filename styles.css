@@ -83,14 +83,21 @@ header {
 
 .header-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('images/geometric-pattern.png'); /* Użyj obrazu z geometrycznym wzorem */
-  background-size: cover;
-  background-position: center;
-  opacity: 0.1;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(20, 241, 149, 0.2), transparent 70%);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .header-content {
@@ -155,17 +162,60 @@ header {
 
 /* Sekcje */
 section {
+  position: relative;
   padding: 80px 0;
+  overflow: hidden;
 }
 
+/* Tła dla sekcji parzystych (sekcje jasne) */
 section:nth-of-type(even) {
-  background-color: #1a1a2e;
+  background: linear-gradient(135deg, #1a1a2e, #3a0ca3);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
 }
 
+/* Tła dla sekcji nieparzystych (sekcje ciemne) */
 section:nth-of-type(odd) {
   background-color: #0e0e0e;
 }
 
+/* Dodanie wzoru geometrycznego do sekcji ciemnych */
+section:nth-of-type(odd)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/geometry-pattern.png'); /* Ścieżka do Twojego wzoru */
+  background-size: 200px 200px;
+  background-repeat: repeat;
+  opacity: 0.05;
+  z-index: 1;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Treść sekcji */
+section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Animacja gradientu */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Nagłówki sekcji */
 section h2 {
   font-size: 42px;
   margin-bottom: 40px;
@@ -338,6 +388,7 @@ footer {
 }
 
 @media (max-width: 768px) {
+  /* Nawigacja mobilna */
   nav ul {
     flex-direction: column;
     background: rgba(14, 14, 14, 0.9);
@@ -360,6 +411,7 @@ footer {
     display: block;
   }
 
+  /* Elementy sekcji mobilne */
   .benefit, .testimonial, .service {
     flex: 1 1 100%;
     margin: 20px 0;
