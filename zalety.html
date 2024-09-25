@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Zalety korzystania z Google Ads z ClickBoost">
+  <meta name="keywords" content="ClickBoost, Google Ads, zalety, reklama, marketing, kampanie reklamowe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zalety - ClickBoost</title>
+  <!-- Czcionki Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Ikony Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- Plik CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Nawigacja -->
+  <nav>
+    <div class="logo"><i class="fas fa-bullseye"></i> ClickBoost</div>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    <ul>
+      <li><a href="index.html#why-us">Dlaczego my?</a></li>
+      <li><a href="zalety.html">Zalety</a></li>
+      <li><a href="opinie.html">Opinie</a></li>
+      <li><a href="uslugi.html">Usługi</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sekcja Zalety -->
+  <section id="benefits">
+    <div class="container">
+      <h2>Zalety Korzystania z Google Ads z ClickBoost</h2>
+      <p>Odkryj, jak Google Ads może zrewolucjonizować Twoją firmę i dlaczego warto powierzyć prowadzenie kampanii specjalistom z ClickBoost.</p>
+
+      <div class="benefits-list">
+        <div class="benefit">
+          <i class="fas fa-chart-line"></i>
+          <h3>Szybkie Wyniki</h3>
+          <p>Google Ads pozwala osiągnąć natychmiastowy wzrost ruchu na stronie. Twoje reklamy pojawią się na szczycie wyników wyszukiwania już w ciągu kilku godzin od uruchomienia kampanii.</p>
+        </div>
+        <div class="benefit">
+          <i class="fas fa-bullseye"></i>
+          <h3>Precyzyjne Targetowanie</h3>
+          <p>Dzięki zaawansowanym narzędziom targetowania docierasz do klientów dokładnie wtedy, gdy szukają Twoich usług. To oznacza wyższą konwersję i lepszy zwrot z inwestycji.</p>
+        </div>
+        <div class="benefit">
+          <i class="fas fa-money-bill-wave"></i>
+          <h3>Kontrola Budżetu</h3>
+          <p>Sam decydujesz, ile chcesz wydać. Optymalizujemy Twoje kampanie, aby każda złotówka przyniosła maksymalny efekt.</p>
+        </div>
+        <div class="benefit">
+          <i class="fas fa-chart-pie"></i>
+          <h3>Mierzalne Wyniki</h3>
+          <p>Otrzymujesz szczegółowe raporty pokazujące, jak Twoje kampanie wpływają na ruch i sprzedaż. Śledzimy kluczowe wskaźniki, aby stale poprawiać wyniki.</p>
+        </div>
+        <div class="benefit">
+          <i class="fas fa-users"></i>
+          <h3>Zwiększenie Widoczności</h3>
+          <p>Aż 90% użytkowników internetu korzysta z Google. Dzięki Google Ads Twoja firma może dotrzeć do milionów potencjalnych klientów.</p>
+        </div>
+        <div class="benefit">
+          <i class="fas fa-award"></i>
+          <h3>Konkurencyjna Przewaga</h3>
+          <p>Wyprzedź konkurencję, pojawiając się wyżej w wynikach wyszukiwania. Firmy korzystające z Google Ads notują średnio 200% zwrotu z inwestycji.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stopka -->
+  <footer>
+    <p>© 2023 ClickBoost. Wszystkie prawa zastrzeżone.</p>
+  </footer>
+
+  <!-- Skrypty -->
+  <!-- Skrypt nawigacji mobilnej -->
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
